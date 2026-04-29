@@ -20,11 +20,12 @@ function App() {
             }
         })
     }
+  
   return (
     <>
       <Header />
       <UserInput userInput={userInput} onChange={handleChange}/>
-      <Results input={userInput}/>
+      {<Results input={userInput}/>}
     </>
   );
 }
